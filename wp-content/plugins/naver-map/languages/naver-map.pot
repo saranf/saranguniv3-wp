@@ -1,0 +1,159 @@
+#. Loco Gettext template
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Naver Map\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: Thu Dec 12 2013 14:05:50 GMT+0900 (대한민국 표준시)\n"
+"POT-Revision-Date: Sat Apr 12 2014 02:57:30 GMT+0900 (대한민국 표준시)\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: \n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+"X-Poedit-KeywordsList: _:1;gettext:1;dgettext:2;ngettext:1,2;dngettext:2,3;__:1;"
+"_e:1;_c:1;_n:1,2;_n_noop:1,2;_nc:1,2;__ngettext:1,2;__ngettext_noop:1,2;_x:1,2c;"
+"_ex:1,2c;_nx:1,2,4c;_nx_noop:1,2,3c;_n_js:1,2;_nx_js:1,2,3c;esc_attr__:1;"
+"esc_html__:1;esc_attr_e:1;esc_html_e:1;esc_attr_x:1,2c;esc_html_x:1,2c;"
+"comments_number_link:2,3;t:1;st:1;trans:1;transChoice:1,2\n"
+"X-Generator: Loco - https://localise.biz/"
+
+#: ../naver-map.php:25
+msgid "Settings saved."
+msgstr ""
+
+#: ../naver-map.php:51 ../naver-map.php:51
+msgid "Naver Map"
+msgstr ""
+
+#: ../naver-map.php:232
+msgid "Please set the Naver Map API key."
+msgstr ""
+
+#: ../naver-map.php:233
+msgid "Please enter an address."
+msgstr ""
+
+#: ../naver-map.php:234
+msgid "Request limit exceeded."
+msgstr ""
+
+#: ../naver-map.php:235
+msgid "Address has not been entered."
+msgstr ""
+
+#: ../naver-map.php:236 ../naver-map.php:237
+msgid "Naver Maps API key is not registered."
+msgstr ""
+
+#: ../naver-map.php:238
+msgid "Failed to search."
+msgstr ""
+
+#: ../naver-map.php:239
+msgid "Search Results: "
+msgstr ""
+
+#: ../naver-map_admin_settings.php:3
+msgid "Naver Map Settings"
+msgstr ""
+
+#: ../naver-map_admin_settings.php:4
+msgid "API Key Setting"
+msgstr ""
+
+#: ../naver-map_admin_settings.php:8
+msgid "Naver Map API Key"
+msgstr ""
+
+#: ../naver-map_admin_settings.php:11
+msgid "Save change"
+msgstr ""
+
+#: ../naver-map_admin_settings.php:12
+msgid "Please register the Naver Map API key."
+msgstr ""
+
+#: ../naver-map_admin_settings.php:13
+msgid "Naver Map API Key View"
+msgstr ""
+
+#: ../naver-map_admin_settings.php:19
+msgid "Map Shortcode Generator"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:9
+msgid "Address search"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:10
+msgid "Search"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:11
+msgid "Please enter the address you want to search."
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:18
+msgid ""
+"Please copy and paste the contents of the blog, the page by copying the above "
+"short code."
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:25
+msgid "Preview"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:69
+msgid "Address list"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:75
+msgid "Map options"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:76
+msgid "Map type"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:77
+msgid "Real-time traffic"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:78
+msgid "Zoom control"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:79
+msgid "Zoom level"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:80
+msgid "Marker title"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:80
+msgid "title"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:81
+msgid "Responsive"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:82
+msgid "Map size"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:82
+msgid "Minimum height"
+msgstr ""
+
+#: ../naver-map_shortcode_generator.php:83
+msgid "Map coordinates"
+msgstr ""
