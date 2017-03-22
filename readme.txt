@@ -17,3 +17,6 @@ update_option('home','localhost/wordpress');
 
 로그아웃 상태에서 admin toolbar를 표시하기위해서 버디프레스(BuddyPress) 플러그인을 설치했습니다.
 설정-버디프레스-옵션에서 로그아웃 사용자에게 툴바 보이기를 체크하면 로그아웃 상태에서도 툴바가 보이게 됩니다.
+
+
+워드프레스 플러그인은 db에 저장됩니다.
