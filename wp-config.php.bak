@@ -20,19 +20,19 @@
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'database_name_here');
+define('DB_NAME', 'wordpress');
 
 /** MySQL database username */
-define('DB_USER', 'username_here');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'password_here');
+define('DB_PASSWORD', '1234');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
-define('DB_CHARSET', 'utf8');
+define('DB_CHARSET', 'utf8mb4');
 
 /** The Database Collate type. Don't change this if in doubt. */
 define('DB_COLLATE', '');
@@ -46,14 +46,14 @@ define('DB_COLLATE', '');
  *
  * @since 2.6.0
  */
-define('AUTH_KEY',         'put your unique phrase here');
-define('SECURE_AUTH_KEY',  'put your unique phrase here');
-define('LOGGED_IN_KEY',    'put your unique phrase here');
-define('NONCE_KEY',        'put your unique phrase here');
-define('AUTH_SALT',        'put your unique phrase here');
-define('SECURE_AUTH_SALT', 'put your unique phrase here');
-define('LOGGED_IN_SALT',   'put your unique phrase here');
-define('NONCE_SALT',       'put your unique phrase here');
+define('AUTH_KEY',         'm1J-Gal:AOVn|gYj7W_!}eH ($amfx715`IG;58q&2n@g@2$ARBNyWUXx++P.lM3');
+define('SECURE_AUTH_KEY',  'LvHQx 0S_Gu!:gU#Xp!R|@35}l?g9N-+)j6zIq0E+_?|Z3Oz[=)>R=->+|iO4+!!');
+define('LOGGED_IN_KEY',    'MGqHGsR,/HBZOHx%5P]tGUM?(o?b9R?iyAB@Tl>L{Ln>*d=Wb;EFZT)@mWo|vfi<');
+define('NONCE_KEY',        'aJ@ocG<Mb|n}-}+Yx$tS)e.5GQyW:|V()<|!Ae[{V=x{,>;4G{{%5*JW>0+oc#-D');
+define('AUTH_SALT',        'j|@]Fslx%F3+&.7a$q(#uYQ/+a=e3ns|-$>s<W%8 -D]mdC(ouAi?kRG3hYw`{`}');
+define('SECURE_AUTH_SALT', 'r1i0T<+3H[S&8+DW<t}B(?5|YcIXeNipYR@At<|Ca(#cM!bNnFcte`-bGn:Ah-*d');
+define('LOGGED_IN_SALT',   'NHkrP.SwXeZm-6{P1qre9t)U7T9ACF3O=n+0S3B;_j]sOnr7,d(Sq,GW5R*48Z@r');
+define('NONCE_SALT',       '0)n_&WwE4g}*u-hB7{>H$mJ&6p]}YE~H3N+$^`]^$ku@o0XP`AU/Hi2M{Bjp1[:9');
 
 /**#@-*/
 
@@ -78,6 +78,8 @@ $table_prefix  = 'wp_';
  * @link https://codex.wordpress.org/Debugging_in_WordPress
  */
 define('WP_DEBUG', false);
+
+define('RELOCATE',true);
 
 /* That's all, stop editing! Happy blogging. */
 
