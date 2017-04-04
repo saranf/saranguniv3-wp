@@ -11,17 +11,24 @@
 		</div>
 	</div><!-- #content -->
 
+	<?php do_action('sydney_before_footer'); ?>
+
 	<?php if ( is_active_sidebar( 'footer-1' ) ) : ?>
 		<?php get_sidebar('footer'); ?>
 	<?php endif; ?>
 
     <a class="go-top"><i class="fa fa-angle-up"></i></a>
-
+		
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info container">
-			Copyright @ SaRang Church UNIV. All Rights reserved. 서울시 서초구 반포대로 121 사랑의교회 대학3부 | 예수사람
+			<a href="<?php echo esc_url( __( 'http://wordpress.org/', 'sydney' ) ); ?>"><?php printf( __( 'Proudly powered by %s', 'sydney' ), 'WordPress' ); ?></a>
+			<span class="sep"> | </span>
+			<?php printf( __( 'Theme: %2$s by %1$s.', 'sydney' ), 'aThemes', '<a href="https://athemes.com/theme/sydney" rel="designer">Sydney</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
+
+	<?php do_action('sydney_after_footer'); ?>
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

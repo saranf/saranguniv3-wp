@@ -25,9 +25,7 @@ function sydney_custom_styles($custom) {
 	if ( (get_theme_mod('front_header_type','slider') == 'nothing' && is_front_page()) || (get_theme_mod('site_header_type') == 'nothing' && !is_front_page()) ) {
 		$menu_bg_color = get_theme_mod( 'menu_bg_color', '#000000' );
 		$rgba 	= sydney_hex2rgba($menu_bg_color, 0.9);
-		$custom .= ".site-header { position:relative;background-color:" . esc_attr($rgba) . ";}" . "\n";
-		$custom .= ".admin-bar .site-header,.admin-bar .site-header.float-header { top:0;}"."\n";
-		$custom .= ".site-header.fixed {position:relative;}"."\n";
+		$custom .= ".site-header { background-color:" . esc_attr($rgba) . ";}" . "\n";
 		$custom .= ".site-header.float-header {padding:20px 0;}"."\n";
 	}
 	//Fonts
@@ -106,9 +104,10 @@ function sydney_custom_styles($custom) {
 		$custom .= ".header-wrap .col-md-4, .header-wrap .col-md-8 { width: 100%; text-align: center;}"."\n";
 		$custom .= "#mainnav { float: none;}"."\n";
 		$custom .= "#mainnav li { float: none; display: inline-block;}"."\n";
-		$custom .= "#mainnav ul ul li { display: block; text-align: left;}"."\n";
+		$custom .= "#mainnav ul ul li { display: block; text-align: left; float:left;}"."\n";
 		$custom .= ".site-logo, .header-wrap .col-md-4 { margin-bottom: 15px; }"."\n";
 		$custom .= ".btn-menu { margin: 0 auto; float: none; }"."\n";
+		$custom .= ".header-wrap .container > .row { display: block; }"."\n";
 	}	
 
 
@@ -116,14 +115,15 @@ function sydney_custom_styles($custom) {
 	//Primary color
 	$primary_color = get_theme_mod( 'primary_color', '#d65050' );
 	if ( $primary_color != '#d65050' ) {
-	$custom .= "#mainnav ul li a:hover, .sydney_contact_info_widget span, .roll-team .team-content .name,.roll-team .team-item .team-pop .team-social li:hover a,.roll-infomation li.address:before,.roll-infomation li.phone:before,.roll-infomation li.email:before,.roll-testimonials .name,.roll-button.border,.roll-button:hover,.roll-icon-list .icon i,.roll-icon-list .content h3 a:hover,.roll-icon-box.white .content h3 a,.roll-icon-box .icon i,.roll-icon-box .content h3 a:hover,.switcher-container .switcher-icon a:focus,.go-top:hover,.hentry .meta-post a:hover,#mainnav > ul > li > a.active, #mainnav > ul > li > a:hover, button:hover, input[type=\"button\"]:hover, input[type=\"reset\"]:hover, input[type=\"submit\"]:hover, .text-color, .social-menu-widget a, .social-menu-widget a:hover, .archive .team-social li a, a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:" . esc_attr($primary_color) . "}"."\n";
-	$custom .= ".preloader .pre-bounce1, .preloader .pre-bounce2,.roll-team .team-item .team-pop,.roll-progress .progress-animate,.roll-socials li a:hover,.roll-project .project-item .project-pop,.roll-project .project-filter li.active,.roll-project .project-filter li:hover,.roll-button.light:hover,.roll-button.border:hover,.roll-button,.roll-icon-box.white .icon,.owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls.clickable .owl-page:hover span,.go-top,.bottom .socials li:hover a,.sidebar .widget:before,.blog-pagination ul li.active,.blog-pagination ul li:hover a,.content-area .hentry:after,.text-slider .maintitle:after,.error-wrap #search-submit:hover,#mainnav .sub-menu li:hover > a,#mainnav ul li ul:after, button, input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"], .panel-grid-cell .widget-title:after { background-color:" . esc_attr($primary_color) . "}"."\n";
+	$custom .= ".widget-area .widget_fp_social a,#mainnav ul li a:hover, .sydney_contact_info_widget span, .roll-team .team-content .name,.roll-team .team-item .team-pop .team-social li:hover a,.roll-infomation li.address:before,.roll-infomation li.phone:before,.roll-infomation li.email:before,.roll-testimonials .name,.roll-button.border,.roll-button:hover,.roll-icon-list .icon i,.roll-icon-list .content h3 a:hover,.roll-icon-box.white .content h3 a,.roll-icon-box .icon i,.roll-icon-box .content h3 a:hover,.switcher-container .switcher-icon a:focus,.go-top:hover,.hentry .meta-post a:hover,#mainnav > ul > li > a.active, #mainnav > ul > li > a:hover, button:hover, input[type=\"button\"]:hover, input[type=\"reset\"]:hover, input[type=\"submit\"]:hover, .text-color, .social-menu-widget a, .social-menu-widget a:hover, .archive .team-social li a, a, h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { color:" . esc_attr($primary_color) . "}"."\n";
+	$custom .= ".project-filter li a.active, .project-filter li a:hover,.preloader .pre-bounce1, .preloader .pre-bounce2,.roll-team .team-item .team-pop,.roll-progress .progress-animate,.roll-socials li a:hover,.roll-project .project-item .project-pop,.roll-project .project-filter li.active,.roll-project .project-filter li:hover,.roll-button.light:hover,.roll-button.border:hover,.roll-button,.roll-icon-box.white .icon,.owl-theme .owl-controls .owl-page.active span,.owl-theme .owl-controls.clickable .owl-page:hover span,.go-top,.bottom .socials li:hover a,.sidebar .widget:before,.blog-pagination ul li.active,.blog-pagination ul li:hover a,.content-area .hentry:after,.text-slider .maintitle:after,.error-wrap #search-submit:hover,#mainnav .sub-menu li:hover > a,#mainnav ul li ul:after, button, input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"], .panel-grid-cell .widget-title:after { background-color:" . esc_attr($primary_color) . "}"."\n";
 	$custom .= ".roll-socials li a:hover,.roll-socials li a,.roll-button.light:hover,.roll-button.border,.roll-button,.roll-icon-list .icon,.roll-icon-box .icon,.owl-theme .owl-controls .owl-page span,.comment .comment-detail,.widget-tags .tag-list a:hover,.blog-pagination ul li,.hentry blockquote,.error-wrap #search-submit:hover,textarea:focus,input[type=\"text\"]:focus,input[type=\"password\"]:focus,input[type=\"datetime\"]:focus,input[type=\"datetime-local\"]:focus,input[type=\"date\"]:focus,input[type=\"month\"]:focus,input[type=\"time\"]:focus,input[type=\"week\"]:focus,input[type=\"number\"]:focus,input[type=\"email\"]:focus,input[type=\"url\"]:focus,input[type=\"search\"]:focus,input[type=\"tel\"]:focus,input[type=\"color\"]:focus, button, input[type=\"button\"], input[type=\"reset\"], input[type=\"submit\"], .archive .team-social li a { border-color:" . esc_attr($primary_color) . "}"."\n";
 	}
 	//Menu background
 	$menu_bg_color = get_theme_mod( 'menu_bg_color', '#000000' );
 	$rgba = sydney_hex2rgba($menu_bg_color, 0.9);
 	$custom .= ".site-header.float-header { background-color:" . esc_attr($rgba) . ";}" . "\n";
+	$custom .= "@media only screen and (max-width: 1024px) { .site-header { background-color:" . esc_attr($menu_bg_color) . ";}}" . "\n";
 	//Site title
 	$site_title = get_theme_mod( 'site_title_color', '#ffffff' );
 	$custom .= ".site-title a, .site-title a:hover { color:" . esc_attr($site_title) . "}"."\n";
@@ -159,6 +159,14 @@ function sydney_custom_styles($custom) {
 	if ( $footer_widgets_color != '#767676' ) {
 		$custom .= "#sidebar-footer,#sidebar-footer a,.footer-widgets .widget-title { color:" . esc_attr($footer_widgets_color) . "}"."\n";	
 	}
+	//Mobile menu icon
+	$mobile_menu_color = get_theme_mod( 'mobile_menu_color', '#ffffff' );
+	$custom .= ".btn-menu { color:" . esc_attr($mobile_menu_color) . "}"."\n";
+
+	//Menu items hover
+	$menu_items_hover = get_theme_mod( 'menu_items_hover', '#d65050' );
+	$custom .= "#mainnav ul li a:hover { color:" . esc_attr($menu_items_hover) . "}"."\n";	
+
 	//Footer background
 	$footer_background = get_theme_mod( 'footer_background', '#1c1c1c' );
 	$custom .= ".site-footer { background-color:" . esc_attr($footer_background) . "}"."\n";	
@@ -169,6 +177,39 @@ function sydney_custom_styles($custom) {
 	$rows_overlay = get_theme_mod( 'rows_overlay', '#000000' );
 	$custom .= ".overlay { background-color:" . esc_attr($rows_overlay) . "}"."\n";	
 
+	//Page wrapper padding
+	$pw_top_padding = get_theme_mod( 'wrapper_top_padding', '83' );
+	$pw_bottom_padding = get_theme_mod( 'wrapper_bottom_padding', '100' );
+	$custom .= ".page-wrap { padding-top:" . intval($pw_top_padding) . "px;}"."\n";	
+	$custom .= ".page-wrap { padding-bottom:" . intval($pw_bottom_padding) . "px;}"."\n";	
+
+
+    $text_slide = get_theme_mod('textslider_slide', 0);
+    if ( $text_slide ) {
+		$custom .= ".slide-inner { display:none;}"."\n";	
+		$custom .= ".slide-inner.text-slider-stopped { display:block;}"."\n";	
+    }
+
+    $mobile_slider = get_theme_mod('mobile_slider', 'responsive');
+    if ( $mobile_slider == 'responsive' ) {
+			$custom .= "@media only screen and (max-width: 1025px) {		
+			.mobile-slide {
+				display: block;
+			}
+			.slide-item {
+				background-image: none !important;
+			}
+			.header-slider {
+			}
+			.slide-item {
+				height: auto !important;
+			}
+			.slide-inner {
+				min-height: initial;
+			} 
+		}"."\n";     	
+    }
+    
 	//Output all the styles
 	wp_add_inline_style( 'sydney-style', $custom );	
 }

@@ -2,14 +2,11 @@
 
 class Sydney_Latest_News extends WP_Widget {
 
-    function sydney_latest_news() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_latest_news_widget', 'description' => __( 'Show the latest news from your blog.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Latest News', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_latest_news_widget';
 		
-		add_action( 'save_post', array($this, 'flush_widget_cache') );
-		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
-		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
     }
 	
 	function form($instance) {
@@ -37,7 +34,6 @@ class Sydney_Latest_News extends WP_Widget {
 		$instance['title'] 			= strip_tags($new_instance['title']);
 		$instance['category'] 		= strip_tags($new_instance['category']);
 		$instance['see_all_text'] 	= strip_tags($new_instance['see_all_text']);						
-		$this->flush_widget_cache();
 
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 		if ( isset($alloptions['sydney_latest_news']) )
@@ -45,11 +41,7 @@ class Sydney_Latest_News extends WP_Widget {
 		  
 		return $instance;
 	}
-	
-	function flush_widget_cache() {
-		wp_cache_delete('sydney_latest_news', 'widget');
-	}
-	
+		
 	// display widget
 	function widget($args, $instance) {
 		$cache = array();

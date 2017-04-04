@@ -2,14 +2,10 @@
 
 class Sydney_Testimonials extends WP_Widget {
 
-    function sydney_testimonials() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_testimonials_widget', 'description' => __( 'Display your testimonials in a slider.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Testimonials', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_testimonials_widget';
-		
-		add_action( 'save_post', array($this, 'flush_widget_cache') );
-		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
-		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
     }
 	
 	function form($instance) {
@@ -49,19 +45,13 @@ class Sydney_Testimonials extends WP_Widget {
 		$instance['category'] 		= strip_tags($new_instance['category']);
 		$instance['autoplay'] 		= absint($new_instance['autoplay']);
 		
-		$this->flush_widget_cache();
-
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 		if ( isset($alloptions['sydney_testimonials']) )
 			delete_option('sydney_testimonials');		  
 		  
 		return $instance;
 	}
-	
-	function flush_widget_cache() {
-		wp_cache_delete('sydney_testimonials', 'widget');
-	}
-	
+
 	// display widget
 	function widget($args, $instance) {
 		$cache = array();
@@ -139,8 +129,6 @@ class Sydney_Testimonials extends WP_Widget {
 				</a>
 			<?php endif; ?>	
 
-
-		</section>		
 	<?php
 		echo $args['after_widget'];
 		wp_reset_postdata();

@@ -2,14 +2,10 @@
 
 class Sydney_Action extends WP_Widget {
 
-    function sydney_action() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_action_widget', 'description' => __( 'Display a call to action block.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Call to action', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_action_widget';
-		
-		add_action( 'save_post', array($this, 'flush_widget_cache') );
-		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
-		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
     }
 	
 	function form($instance) {
@@ -42,40 +38,16 @@ class Sydney_Action extends WP_Widget {
 			$instance['action_text'] = $new_instance['action_text'];
 		} else {
 			$instance['action_text'] = stripslashes( wp_filter_post_kses( addslashes($new_instance['action_text']) ) );
-		}			
-		$this->flush_widget_cache();
-
-		$alloptions = wp_cache_get( 'alloptions', 'options' );
-		if ( isset($alloptions['sydney_action']) )
-			delete_option('sydney_action');		  
+		}			  
 		  
 		return $instance;
 	}
 	
-	function flush_widget_cache() {
-		wp_cache_delete('sydney_action', 'widget');
-	}
-	
 	function widget($args, $instance) {
-		$cache = array();
-		if ( ! $this->is_preview() ) {
-			$cache = wp_cache_get( 'sydney_action', 'widget' );
-		}
-
-		if ( ! is_array( $cache ) ) {
-			$cache = array();
-		}
-
 		if ( ! isset( $args['widget_id'] ) ) {
 			$args['widget_id'] = $this->id;
 		}
 
-		if ( isset( $cache[ $args['widget_id'] ] ) ) {
-			echo $cache[ $args['widget_id'] ];
-			return;
-		}
-
-		ob_start();
 		extract($args);
 
 		$title 			 = ( ! empty( $instance['title'] ) ) ? $instance['title'] : '';
@@ -110,12 +82,6 @@ class Sydney_Action extends WP_Widget {
 
 		echo $args['after_widget'];
 
-		if ( ! $this->is_preview() ) {
-			$cache[ $args['widget_id'] ] = ob_get_flush();
-			wp_cache_set( 'sydney_action', $cache, 'widget' );
-		} else {
-			ob_end_flush();
-		}
 	}
 	
 }

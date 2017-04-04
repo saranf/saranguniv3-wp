@@ -13,29 +13,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="profile" href="http://gmpg.org/xfn/11">
 <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-<link rel="apple-touch-icon" href="http://saranguniv3.org/wp-content/uploads/2015/10/Icon-60.png">
-<link rel="apple-touch-icon" sizes="76x76" href="http://saranguniv3.org/wp-content/uploads/2015/10/Icon-76.png">
-<link rel="apple-touch-icon" sizes="120x120" href="http://saranguniv3.org/wp-content/uploads/2015/10/Icon-60@2x.png">
-<link rel="apple-touch-icon" sizes="152x152" href="http://saranguniv3.org/wp-content/uploads/2015/10/Icon-76@2x.png">
-<link rel="apple-touch-icon-precomposed" href="http://saranguniv3.org/wp-content/uploads/2015/10/Icon-60.png">
-
-<?php if ( get_theme_mod('site_favicon') ) : ?>
-	<link rel="shortcut icon" href="<?php echo esc_url(get_theme_mod('site_favicon')); ?>" />
+<?php if ( ! function_exists( 'has_site_icon' ) || ! has_site_icon() ) : ?>
+	<?php if ( get_theme_mod('site_favicon') ) : ?>
+		<link rel="shortcut icon" href="<?php echo esc_url(get_theme_mod('site_favicon')); ?>" />
+	<?php endif; ?>
 <?php endif; ?>
 
 <?php wp_head(); ?>
 </head>
 
 <body <?php body_class(); ?>>
-<div class="preloader">
-    <div class="spinner">
-        <div class="pre-bounce1"></div>
-        <div class="pre-bounce2"></div>
-    </div>
-</div>	
+
+<?php do_action('sydney_before_site'); //Hooked: sydney_preloader() ?>
+
 <div id="page" class="hfeed site">
 	<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'sydney' ); ?></a>
+
+	<?php do_action('sydney_before_header'); //Hooked: sydney_header_clone() ?>
 
 	<header id="masthead" class="site-header" role="banner">
 		<div class="header-wrap">
@@ -59,12 +53,21 @@
 			</div>
 		</div>
 	</header><!-- #masthead -->
-	<?php sydney_slider_template(); ?>
 
-	<div class="header-image">
-		<?php sydney_header_overlay(); ?>
-		<img class="header-inner" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>">
+	<?php do_action('sydney_after_header'); ?>
+
+	<div class="sydney-hero-area">
+		<?php sydney_slider_template(); ?>
+		<div class="header-image">
+			<?php sydney_header_overlay(); ?>
+			<img class="header-inner" src="<?php header_image(); ?>" width="<?php echo esc_attr( get_custom_header()->width ); ?>" alt="<?php bloginfo('name'); ?>" title="<?php bloginfo('name'); ?>">
+		</div>
+		<?php sydney_header_video(); ?>
+
+		<?php do_action('sydney_inside_hero'); ?>
 	</div>
+
+	<?php do_action('sydney_after_hero'); ?>
 
 	<div id="content" class="page-wrap">
 		<div class="container content-wrapper">

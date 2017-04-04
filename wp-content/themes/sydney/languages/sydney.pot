@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: Sydney\n"
-"POT-Creation-Date: 2015-07-07 09:24+0200\n"
-"PO-Revision-Date: 2015-07-07 09:24+0200\n"
+"POT-Creation-Date: 2015-10-03 16:42+0200\n"
+"PO-Revision-Date: 2015-10-03 16:42+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: en_US\n"
@@ -94,19 +94,19 @@ msgstr ""
 msgid "Theme: %2$s by %1$s."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/functions.php:56
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/functions.php:57
 msgid "Primary Menu"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/functions.php:91
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/functions.php:92
 msgid "Sidebar"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/functions.php:104
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/functions.php:105
 msgid "Footer "
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/functions.php:227
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/functions.php:228
 msgid "Create your menu here"
 msgstr ""
 
@@ -917,206 +917,345 @@ msgstr ""
 msgid "Archives"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:226
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/inc/theme-info.php:11
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/inc/theme-info.php:19
+msgid "Sydney Info"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/inc/theme-info.php:20
+msgid "Theme demo"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/inc/theme-info.php:21
+msgid "Documentation"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/inc/theme-info.php:22
+msgid "Support"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/inc/theme-info.php:23
+msgid "Pro version"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:333
 msgid "Install Required Plugins"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:227
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:334
 msgid "Install Plugins"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:228
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:335
 #, php-format
 msgid "Installing Plugin: %s"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:229
-msgid "Something went wrong."
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:336
+msgid "Something went wrong with the plugin API."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:240
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:397
 msgid "Return to Required Plugins Installer"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:241
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:398
 msgid "Return to the dashboard"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:242
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2107
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:399
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3025
 msgid "Plugin activated successfully."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:243
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:400
 msgid "The following plugin was activated successfully:"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:244
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:402
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:403
 #, php-format
 msgid "All plugins installed and activated successfully. %1$s"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:245
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:404
 msgid "Dismiss this notice"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:595
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2337
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:405
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:520
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:521
+msgid "Update Required"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:635
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:824
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3434
 msgid "Return to the Dashboard"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1281
-msgid "Private Repository"
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:931
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1285
-msgid "Pre-Packaged"
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:931
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:934
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1290
-msgid "WordPress Repository"
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:934
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1293
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1877
+#, php-format
+msgctxt "%s = version number"
+msgid "TGMPA v%s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2163
 msgid "Required"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1293
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2166
 msgid "Recommended"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1296
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2182
+msgid "WordPress Repository"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2185
+msgid "External Source"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2188
+msgid "Pre-Packaged"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2205
 msgid "Not Installed"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1299
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2209
 msgid "Installed But Not Activated"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1481
-#, php-format
-msgid ""
-"No plugins to install or activate. <a href=\"%1$s\">Return to the Dashboard</"
-"a>"
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2211
+msgid "Active"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1497
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2217
+msgid "Required Update not Available"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2220
+msgid "Requires Update"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2223
+msgid "Update recommended"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2231
+#, php-format
+msgctxt "%1$s = install status, %2$s = update status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2367
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2375
+msgid "Installed version:"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2383
+msgid "Minimum required version:"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2395
+msgid "Available version:"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2418
+#, php-format
+msgid ""
+"No plugins to install, update or activate. <a href=\"%1$s\">Return to the "
+"Dashboard</a>"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2432
 msgid "Plugin"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1498
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2433
 msgid "Source"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1499
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2434
 msgid "Type"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1500
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2438
+msgid "Version"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2439
 msgid "Status"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1518
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2487
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Install %2$s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2491
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Update %2$s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2496
+#, php-format
+msgctxt "%2$s = plugin name in screen reader markup"
+msgid "Activate %2$s"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2566
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2599
 msgid "Install"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1519
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2605
+msgid "Update"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2608
 msgid "Activate"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1630
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2639
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2641
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2677
 msgid "No plugins are available to be installed at this time."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:1746
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2679
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2784
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2810
 msgid "No plugins are available to be activated at this time."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2090
-msgid "Install package not available."
-msgstr ""
-
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2091
-#, php-format
-msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
-msgstr ""
-
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2092
-msgid "Unpacking the package&#8230;"
-msgstr ""
-
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2093
-msgid "Installing the plugin&#8230;"
-msgstr ""
-
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2094
-msgid "Plugin install failed."
-msgstr ""
-
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2095
-msgid "Plugin installed successfully."
-msgstr ""
-
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2106
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3024
 msgid "Plugin activation failed."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2229
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3358
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3360
 #, php-format
 msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2230
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3361
 #, php-format
 msgid "The installation of %1$s failed."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2234
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3365
 msgid ""
 "The installation and activation process is starting. This process may take a "
 "while on some hosts, so please be patient."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2235
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3366
 #, php-format
 msgid "%1$s installed and activated successfully."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2235
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2242
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3366
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3372
 msgid "Show Details"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2235
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2242
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3366
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3372
 msgid "Hide Details"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2236
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3367
 msgid "All installations and activations have been completed."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2237
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3368
 #, php-format
 msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2241
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3371
 msgid ""
 "The installation process is starting. This process may take a while on some "
 "hosts, so please be patient."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2242
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3372
 #, php-format
 msgid "%1$s installed successfully."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2243
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3373
 msgid "All installations have been completed."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:2244
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/plugins/class-tgm-plugin-activation.php:3374
 #, php-format
 msgid "Installing Plugin %1$s (%2$d/%3$d)"
 msgstr ""
@@ -1138,7 +1277,7 @@ msgstr ""
 #: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-services-type-a.php:31
 #: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-services-type-b.php:31
 #: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-skills.php:28
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:25
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:26
 #: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/video-widget.php:21
 msgid "Title"
 msgstr ""
@@ -1424,8 +1563,8 @@ msgstr ""
 msgid "Display services in two columns instead of three?"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-services-type-a.php:149
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-services-type-b.php:164
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-services-type-a.php:153
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-services-type-b.php:168
 msgid "See all our services"
 msgstr ""
 
@@ -1515,34 +1654,38 @@ msgstr ""
 msgid "Sydney FP: Testimonials"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:23
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:24
 msgid ""
 "In order to display this widget, you must first add some testimonials from "
 "your admin area."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:28
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:29
 msgid "Number of testimonials to show (-1 shows all of them):"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:30
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:31
 msgid ""
 "The URL for your button [In case you want a button below your testimonials "
 "block]"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:32
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:33
 msgid ""
 "The text for the button [Defaults to <em>See all our testimonials</em> if "
 "left empty]"
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:34
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:35
 msgid ""
 "Enter the slug for your category or leave empty to show all testimonials."
 msgstr ""
 
-#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:131
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:37
+msgid "Autoplay time [ms]"
+msgstr ""
+
+#: D:\Programe\InstantWP\InstantWP_4.3.1\iwpserver\htdocs\wordpress\wp-content\themes\sydney/widgets/fp-testimonials.php:137
 msgid "See all our testimonials"
 msgstr ""
 

@@ -2,14 +2,10 @@
 
 class Sydney_Clients extends WP_Widget {
 
-    function sydney_clients() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_clients_widget', 'description' => __( 'Display your clients list.', 'sydney') );
         parent::__construct(false, $name = __('Sydney FP: Clients', 'sydney'), $widget_ops);
 		$this->alt_option_name = 'sydney_clients_widget';
-		
-		add_action( 'save_post', array($this, 'flush_widget_cache') );
-		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
-		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
     }
 	
 	function form($instance) {
@@ -17,7 +13,9 @@ class Sydney_Clients extends WP_Widget {
 		$number    		= isset( $instance['number'] ) ? intval( $instance['number'] ) : -1;
 		$category   	= isset( $instance['category'] ) ? esc_attr( $instance['category'] ) : '';
 		$see_all   		= isset( $instance['see_all'] ) ? esc_url_raw( $instance['see_all'] ) : '';
-		$see_all_text  	= isset( $instance['see_all_text'] ) ? esc_html( $instance['see_all_text'] ) : '';		
+		$see_all_text  	= isset( $instance['see_all_text'] ) ? esc_html( $instance['see_all_text'] ) : '';
+		$newtab			= isset( $instance['newtab'] ) ? (bool) $instance['newtab'] : false;					
+				
 	?>
 
 	<p><?php _e('In order to display this widget, you must first add some clients from your admin area. Set your client logos as featured images.', 'sydney'); ?></p>
@@ -33,7 +31,9 @@ class Sydney_Clients extends WP_Widget {
 	<input class="widefat" id="<?php echo $this->get_field_id( 'see_all_text' ); ?>" name="<?php echo $this->get_field_name( 'see_all_text' ); ?>" type="text" value="<?php echo $see_all_text; ?>" size="3" /></p>		
 	<p><label for="<?php echo $this->get_field_id( 'category' ); ?>"><?php _e( 'Enter the slug for your category or leave empty to show all clients.', 'sydney' ); ?></label>
 	<input class="widefat" id="<?php echo $this->get_field_id( 'category' ); ?>" name="<?php echo $this->get_field_name( 'category' ); ?>" type="text" value="<?php echo $category; ?>" size="3" /></p>
-		
+	<p><input class="checkbox" type="checkbox" <?php checked( $newtab ); ?> id="<?php echo $this->get_field_id( 'newtab' ); ?>" name="<?php echo $this->get_field_name( 'newtab' ); ?>" />
+	<label for="<?php echo $this->get_field_id( 'newtab' ); ?>"><?php _e( 'Open clients links in a new tab?', 'sydney' ); ?></label></p>
+			
 	<?php
 	}
 
@@ -44,17 +44,13 @@ class Sydney_Clients extends WP_Widget {
 		$instance['see_all'] 		= esc_url_raw( $new_instance['see_all'] );	
 		$instance['see_all_text'] 	= strip_tags($new_instance['see_all_text']);
 		$instance['category'] 		= strip_tags($new_instance['category']);		
-		$this->flush_widget_cache();
+		$instance['newtab'] 		= isset( $new_instance['newtab'] ) ? (bool) $new_instance['newtab'] : false;		
 
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 		if ( isset($alloptions['sydney_clients']) )
 			delete_option('sydney_clients');		  
 		  
 		return $instance;
-	}
-	
-	function flush_widget_cache() {
-		wp_cache_delete('sydney_clients', 'widget');
 	}
 	
 	// display widget
@@ -89,7 +85,14 @@ class Sydney_Clients extends WP_Widget {
 			$number = -1;
 		}			
 		$category 		= isset( $instance['category'] ) ? esc_attr($instance['category']) : '';
+		$newtab			= isset( $instance['newtab'] ) ? $instance['newtab'] : false;
 
+		if ( $newtab ) {
+			$target = "_blank";
+		} else {
+			$target = "_self";
+		}
+		
 		$clients = new WP_Query( array(
 			'no_found_rows'       => true,
 			'post_status'         => 'publish',
@@ -111,7 +114,7 @@ class Sydney_Clients extends WP_Widget {
 					<?php if ( has_post_thumbnail() ) : ?>
 						<div class="client-item">
 							<?php if ($link) : ?>
-								<a href="<?php echo esc_url($link); ?>"><?php the_post_thumbnail(); ?></a>
+								<a target="<?php echo $target; ?>" href="<?php echo esc_url($link); ?>"><?php the_post_thumbnail(); ?></a>
 							<?php else : ?>
 								<?php the_post_thumbnail('sydney-small-thumb'); ?>
 							<?php endif; ?>

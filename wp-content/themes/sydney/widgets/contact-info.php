@@ -2,14 +2,10 @@
 
 class Sydney_Contact_Info extends WP_Widget {
 
-    function sydney_contact_info() {
+	public function __construct() {
 		$widget_ops = array('classname' => 'sydney_contact_info_widget', 'description' => __( 'Display your contact info', 'sydney') );
         parent::__construct(false, $name = __('Sydney: Contact info', 'sydney'), $widget_ops);
-		$this->alt_option_name = 'sydney_contact_info';
-		
-		add_action( 'save_post', array($this, 'flush_widget_cache') );
-		add_action( 'deleted_post', array($this, 'flush_widget_cache') );
-		add_action( 'switch_theme', array($this, 'flush_widget_cache') );		
+		$this->alt_option_name = 'sydney_contact_info';	
     }
 	
 	function form($instance) {
@@ -43,7 +39,6 @@ class Sydney_Contact_Info extends WP_Widget {
 		$instance['address'] = strip_tags($new_instance['address']);
 		$instance['phone'] = strip_tags($new_instance['phone']);
 		$instance['email'] = sanitize_email($new_instance['email']);
-		$this->flush_widget_cache();
 
 		$alloptions = wp_cache_get( 'alloptions', 'options' );
 		if ( isset($alloptions['sydney_contact_info']) )
@@ -51,11 +46,7 @@ class Sydney_Contact_Info extends WP_Widget {
 		  
 		return $instance;
 	}
-	
-	function flush_widget_cache() {
-		wp_cache_delete('sydney_contact_info', 'widget');
-	}
-	
+		
 	function widget($args, $instance) {
 		$cache = array();
 		if ( ! $this->is_preview() ) {
